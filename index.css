@@ -1,0 +1,47 @@
+body {
+  background: #2d303f;
+  margin-top: 150px;
+}
+
+#drum-machine {
+  position: relative;
+  top: 75px;
+}
+
+#display {
+  font: 50px monospace;
+  margin-bottom: 0px;
+  background: #2d303f;
+}
+
+.grid-container {
+  border-radius: 90px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.grid-container #btn-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+  background-color: #df4407;
+}
+.grid-container #btn-grid button {
+  outline: none;
+}
+.grid-container #btn-grid .drum-pad {
+  border-radius: 100px;
+  height: 75px;
+  margin: 5px;
+  width: 75px;
+  font: 50px monospace;
+  transition: 0.8s;
+  background: #a9f100;
+  box-shadow: -2px 0px #df4407, 2px 0px #df4407, 0 2px #df4407, 0 -2px #df4407;
+}
+@media screen and (min-width: 720px) {
+  .grid-container #btn-grid .drum-pad {
+    width: 125px;
+    height: 125px;
+  }
+}
